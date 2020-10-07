@@ -1,6 +1,7 @@
 import * as jwt from 'jsonwebtoken';
 import * as fs from 'fs';
 import * as path from 'path';
+import * as mockedJwt from './testdata/jwt_plain.json';
 
 let jsonPath = path.join(__dirname, '.', 'testdata', 'keys', 'jwt_private_key.pk');
 const privateKey = fs.readFileSync(jsonPath).toString('utf-8');
