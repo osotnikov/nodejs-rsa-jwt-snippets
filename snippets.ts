@@ -14,4 +14,4 @@ let verified = null;
 jwt.verify(signedToken, publicKey, function(err, decoded) {
   verified = decoded;
 });
-TOKEN = 'Bearer ' + signedToken;
+let TOKEN = 'Bearer ' + signedToken;
